@@ -4,6 +4,7 @@ namespace App\Helper;
 
 use App\Models\City;
 use GuzzleHttp\Client;
+use GuzzleHttp\Promise;
 use Illuminate\Support\Carbon;
 use stdClass;
 
@@ -18,13 +19,14 @@ class HelperUtil
         return $response;
     }
 
-    public static function parseMeteoAllData($url): stdClass
+    public static function parseMeteoAllData($url): array
     {
         $client = new Client();
-        $response = $client->get($url)->getBody()->getContents();
-        $response = json_decode($response);
+        $promise = ['city' => $client->getAsync($url)];
 
-        return $response;
+        $response = Promise\Utils::settle($promise)->wait();
+
+        return $response['city'];
     }
 
     public static function wrapData(City $city, $response): stdClass

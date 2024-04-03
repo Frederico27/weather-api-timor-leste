@@ -6,6 +6,8 @@ use App\Helper\HelperUtil;
 use App\Http\Resources\CityResource;
 use App\Http\Resources\CityResourceCollection;
 use App\Models\City;
+use GuzzleHttp\Client;
+use GuzzleHttp\Promise;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -21,13 +23,29 @@ class WeatherController extends Controller
     public function getAllCurrentWeather(): CityResourceCollection
     {
         $cities = City::all();
-        $cities_data = [];
+        $promises = [];
+        $client = new Client();
+
         foreach ($cities as $city) {
             $url = $this->baseUrl . "latitude=" . $city->lat . "&longitude=" . $city->lng . $this->tailUrl;
+            $promises[$city->id] = $client->getAsync($url)->then(function ($response) use ($city) {
+                $response = json_decode($response->getBody()->getContents());
+                return HelperUtil::wrapData($city, $response);
+            });
+        }
 
-            $response = HelperUtil::parseMeteoAllData($url);
-            $object_response = HelperUtil::wrapData($city, $response);
-            $cities_data[] = $object_response;
+        $responses = Promise\Utils::settle($promises)->wait();
+        $cities_data = [];
+
+        foreach ($responses as $cityId => $promise) {
+            if ($promise['state'] === 'fulfilled') {
+                $cities_data[] = $promise['value'];
+            } else {
+                // Handle errors
+                return throw new HttpResponseException(response()
+                    ->json(['errors' => 'Dadus la existe'])
+                    ->setStatusCode(400));
+            }
         }
 
         return new CityResourceCollection($cities_data);
