@@ -10,6 +10,7 @@ use stdClass;
 
 class HelperUtil
 {
+    //http client method to parse of data
     public static function parseMeteoData($url): stdClass
     {
         $client = new Client();
@@ -19,16 +20,7 @@ class HelperUtil
         return $response;
     }
 
-    public static function parseMeteoAllData($url): array
-    {
-        $client = new Client();
-        $promise = ['city' => $client->getAsync($url)];
-
-        $response = Promise\Utils::settle($promise)->wait();
-
-        return $response['city'];
-    }
-
+    //resource of data wraping
     public static function wrapData(City $city, $response): stdClass
     {
         $response_result = [
@@ -46,13 +38,16 @@ class HelperUtil
             "velosidade_anin_10m" => $response->current->wind_speed_10m . " km/h"
         ];
 
+        //convert an array to object
         $object_response = (object) $response_result;
 
+        //return the data
         return $object_response;
     }
 
     public static function filterInputCity($city_name)
     {
+        //switch statement case of city name
         switch ($city_name) {
             case 'dili':
                 return 'dili';
