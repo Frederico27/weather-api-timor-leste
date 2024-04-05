@@ -14,10 +14,9 @@ use Illuminate\Http\Request;
 
 class WeatherController extends Controller
 {
-
     //Default Value of URL
-    public string $baseUrl = "https://api.open-meteo.com/v1/forecast?"; //Meteo URL
-    public string $tailUrl = "&current=temperature_2m,relative_humidity_2m,precipitation,rain,weather_code,cloud_cover,pressure_msl,surface_pressure,wind_speed_10m&timezone=Asia%2FTokyo"; //Atrribute Meteo
+    private string $baseUrl = "https://api.open-meteo.com/v1/forecast?"; //Meteo URL
+    private string $tailUrl = "&current=temperature_2m,relative_humidity_2m,precipitation,rain,weather_code,cloud_cover,pressure_msl,surface_pressure,wind_speed_10m&timezone=Asia%2FTokyo"; //Atrribute Meteo
 
 
     public function getAllCurrentWeather(): CityResourceCollection
@@ -89,8 +88,4 @@ class WeatherController extends Controller
                 ->setStatusCode(400));
         }
     }
-
-    // public function HourlyApi(): JsonResponse
-    // {
-    // }
 }
