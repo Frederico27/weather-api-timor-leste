@@ -1,6 +1,8 @@
 <?php
 
-use App\Http\Controllers\WeatherController;
+use App\Http\Controllers\CurrentWeatherController;
+use App\Http\Controllers\DailyWeatherController;
+use App\Http\Controllers\HourlyWeatherController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -15,5 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/klima', [WeatherController::class, 'getAllCurrentWeather']);
-Route::get('/klima/{name}', [WeatherController::class, 'getEachCurrentWeather']);
+Route::get('/klima', [CurrentWeatherController::class, 'getAllCurrentWeather']);
+Route::get('/klima/{name}', [CurrentWeatherController::class, 'getEachCurrentWeather']);
+Route::get('/klima/diariu/{name}', [DailyWeatherController::class, 'getDailyWeather']);
+Route::get('/klima/oras/{name}', [HourlyWeatherController::class, 'getHourlyWeather']);

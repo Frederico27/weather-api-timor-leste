@@ -1,0 +1,119 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Weather Timor-Leste API Documentation",
+        "contact": {
+            "email": "frederico27@gmail.com"
+        },
+        "version": "0.1"
+    },
+    "servers": [
+        {
+            "url": "http://127.0.0.1:8000",
+            "description": "Weather API"
+        }
+    ],
+    "paths": {
+        "/api/klima": {
+            "get": {
+                "tags": [
+                    "Current Weather Data"
+                ],
+                "summary": "Get All Current weather data from 14 municipalities",
+                "operationId": "d791902ce7c2d73d7c75e7dac12abb56",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid request"
+                    }
+                }
+            }
+        },
+        "/api/klima/{municipality}": {
+            "get": {
+                "tags": [
+                    "Current Weather Data"
+                ],
+                "summary": "Get Each Current weather data from 14 municipalities",
+                "operationId": "90a6496d643fabe56a1c33a24d1240e0",
+                "parameters": [
+                    {
+                        "name": "municipality",
+                        "in": "path",
+                        "description": "Name of the municipality to get weather data for",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid request"
+                    }
+                }
+            }
+        },
+        "/api/klima/diariu/{municipality}": {
+            "get": {
+                "tags": [
+                    "Daily Weather Data"
+                ],
+                "summary": "Get Each Daily weather data from 14 municipalities",
+                "operationId": "d2f344e4eb859a36bd0731a6fed70127",
+                "parameters": [
+                    {
+                        "name": "municipality",
+                        "in": "path",
+                        "description": "Name of the municipality to get weather data for",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid request"
+                    }
+                }
+            }
+        },
+        "/api/klima/oras/{municipality}": {
+            "get": {
+                "tags": [
+                    "Hourly Weather Data"
+                ],
+                "summary": "Get Each Hourly weather data from 14 municipalities",
+                "operationId": "8bc787427e4c9a3e9f1c7a6c3dbd1a0d",
+                "parameters": [
+                    {
+                        "name": "municipality",
+                        "in": "path",
+                        "description": "Name of the municipality to get weather data for",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation"
+                    },
+                    "400": {
+                        "description": "Invalid request"
+                    }
+                }
+            }
+        }
+    }
+}
