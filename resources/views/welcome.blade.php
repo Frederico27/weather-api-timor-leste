@@ -184,20 +184,12 @@
                         <td>Udan Malirin: Kamaan, Moderada, Intensidade aas</td>
                     </tr>
     
-                    <tr>
-                        <td>66, 67</td>
-                        <td>Udan Malirin: Kamaan, Moderada, Intensidade aas</td>
-                    </tr>
     
                     <tr>
                         <td>71, 73, 75</td>
                         <td>Neve: Kamaan, Moderada, Intensidade aas</td>
                     </tr>
     
-                    <tr>
-                        <td>71, 73, 75</td>
-                        <td>Neve: Kamaan, Moderada, Intensidade aas</td>
-                    </tr>
     
                     <tr>
                         <td>77</td>
