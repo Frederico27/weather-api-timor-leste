@@ -38,6 +38,10 @@
         <u><h2>Hourly Data</h2></u>
         <h3 style="color: rgb(247, 0, 144)">GET: api/klima/oras/{municipality}</h3>
         <p>This endpoint retrieves hourly weather of next 10 hours from specific municipality. Examples we specify on Ermera data like this <b><i>api/klima/oras/ermera</i></b>. <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima/oras/ermera">Result Link</a></p>
+
+
+        <h3>For More Information about this Swagger API Docs </h3>
+        <p>You can visit this <a href="https://weather-api-timor-leste-production.up.railway.app/api/documentation">link</a></p>
        
 
         <h2>Weather Parameter Descriptions</h2>
