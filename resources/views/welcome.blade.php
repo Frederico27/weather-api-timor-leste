@@ -24,12 +24,17 @@
             </div>
           </div>
 
+          <h2>About this API:</h2>
+          <p>This API is provided to collect all the real-time weather data of all municipalities across Timor-Leste. All the resource data is collected from Himawari Satelitte with the help by Open Source Weather Data Website: <a href="https://open-meteo.com/">Open Meteo</a>. This API is created in objective to provided easy access of real-time weather data of Timor-Leste with easy access and free for purpose of development an app, website, ChatBot and many more related with weather in Timor-Leste.
+            This API data is not 100% accurate because there is only one type of source that retrieve from satellite, so all the weather data only based by the image of the clouds cover the island, because there is still lack of Weather Monitoring System that established in Timor-Leste land across all municipalities.
+        </p>
+         
        
         <h2>The documentation of API <img src="{{ asset("image/timor-leste.png") }}" style="width: 40px" alt="tls"></h2>
         <p>You can visit this <a class='bx bxs-right-arrow-square' href="https://weather-api-timor-leste-production.up.railway.app/api/documentation">Link</a></p>
        
 
-        <h2>Weather Parameter Descriptions</h2>
+        <h2>Weather Parameter Descriptions in Tetun</h2>
         <table class="table">
             <thead>
                 <tr>
@@ -131,78 +136,91 @@
         </table>
 
         <section id="weather">
-            <h2>Weather Code Descriptions</h2>
+            <h2>Weather Code Descriptions in Tetun</h2>
             <table class="table">
                 <thead>
                     <tr>
                         <th>Weather Code (Kodigu Klima)</th>
                         <th>Description</th>
+                        <th>Weather Logo</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>0</td>
                         <td>Lalehan Naroman</td>
+                        <td><img src="{{ asset('image/weathercode/clearsky.png') }}" style="width: 60px; height: 60px" alt="clearsky"></td>
                     </tr>
                     <tr>
                         <td>1, 2, 3</td>
                         <td>Naroman Naton, Kalohan, Kalohan nakukun uitoan</td>
+                        <td><img src="{{ asset('image/weathercode/fewclouds.png') }}" style="width: 60px; height: 60px" alt="fewclouds"></td>
                     </tr>
                     <tr>
                         <td>45, 48</td>
                         <td>Abu-Abu taka</td>
+                        <td><img src="{{ asset('image/weathercode/scatteredclouds.png') }}" style="width: 60px; height: 60px;" alt="scatteredclouds"></td>
                     </tr>
     
                     <tr>
                         <td>51, 53, 55</td>
                         <td>Udan Piska: Kamaan, Moderada, Intensidade aas</td>
+                        <td><img src="{{ asset('image/weathercode/rain.png') }}" style="width: 60px; height: 60px" alt="rain"></td>
                     </tr>
     
                     <tr>
                         <td>56, 57</td>
                         <td>Udan Piska Malirin: Kamaan, Moderada, Intensidade aas</td>
+                        <td><img src="{{ asset('image/weathercode/rain.png') }}" style="width: 60px; height: 60px" alt="rain"></td>
                     </tr>
     
                     <tr>
                         <td>61, 63, 65</td>
                         <td>Udan: Kamaan, Moderada, Intensidade aas</td>
+                        <td><img src="{{ asset('image/weathercode/showerrain.png') }}" style="width: 60px; height: 60px" alt="showerrain"></td>
                     </tr>
     
                     <tr>
                         <td>66, 67</td>
                         <td>Udan Malirin: Kamaan, Moderada, Intensidade aas</td>
+                        <td><img src="{{ asset('image/weathercode/showerrain.png') }}" style="width: 60px; height: 60px" alt="showerrain"></td>
                     </tr>
-    
     
                     <tr>
                         <td>71, 73, 75</td>
                         <td>Neve: Kamaan, Moderada, Intensidade aas</td>
+                        <td><img src="{{ asset('image/weathercode/snow.png') }}" style="width: 60px; height: 60px" alt="snow"></td>
                     </tr>
     
     
                     <tr>
                         <td>77</td>
                         <td>Neve: Piska</td>
+                        <td><img src="{{ asset('image/weathercode/snow.png') }}" style="width: 60px; height: 60px" alt="snow"></td>
                     </tr>
     
                     <tr>
                         <td>80, 81, 82</td>
                         <td>Udan maka'as: Kamaan, Moderada, Maka'as</td>
+                        <td><img src="{{ asset('image/weathercode/showerrain.png') }}" style="width: 60px; height: 60px" alt="showerrain"></td>
                     </tr>
     
                     <tr>
                         <td>85, 86</td>
                         <td>Udan Neve: Kamaan, Maka'as</td>
+                        <td><img src="{{ asset('image/weathercode/snow.png') }}" style="width: 60px; height: 60px" alt="snow"></td>
                     </tr>
     
                     <tr>
                         <td>95</td>
                         <td>Railakan: kamaan, maka'as</td>
+                        <td><img src="{{ asset('image/weathercode/thunderstorm.png') }}" style="width: 60px; height: 60px" alt="thunderstorm"></td>
                     </tr>
     
                     <tr>
                         <td>96, 99</td>
-                        <td>Railakan ho Udan Es: Kama'an no Maka'as</td>
+                        <td>Railakan ho Udan, ka Udan Es: Kama'an no Maka'as</td>
+                        <td><img src="{{ asset('image/weathercode/thunderstorm.png') }}" style="width: 60px; height: 60px" alt="thunderstorm"></td>
                     </tr>
     
     
