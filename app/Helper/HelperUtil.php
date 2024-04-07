@@ -146,6 +146,7 @@ class HelperUtil
 
     public static function filterInputCity($city_name)
     {
+        $city_name = strtolower($city_name);
         //switch statement case of city name
         switch ($city_name) {
             case 'dili':
