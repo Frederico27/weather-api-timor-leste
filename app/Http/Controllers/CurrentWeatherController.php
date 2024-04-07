@@ -17,7 +17,7 @@ use Illuminate\Http\Request;
  *     title="Weather Timor-Leste API Documentation",
  *     version="0.1",
  *      @OA\Contact(
- *          email="frederico27@gmail.com"
+ *          email="fredericomarcal27@gmail.com"
  *      ),
  * ),
  *  @OA\Server(
