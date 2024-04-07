@@ -39,10 +39,18 @@ class DailyWeatherController extends Controller
 
         //Parsing city data from database
         $city = City::where('name', $city_name)->first();
-        //create array of promise
-        $promises = [];
-        //initialize http client
-        $client = new Client();
+        //check data is presence
+        if ($city) {
+            //create array of promise
+            $promises = [];
+            //initialize http client
+            $client = new Client();
+        } else {
+            return throw new HttpResponseException(response()
+                ->json(['errors' => 'Dadus la existe'])
+                ->setStatusCode(400));
+        }
+
 
         //url concatenation
         $url = $this->baseUrl . "latitude=" . $city->lat . "&longitude=" . $city->lng . $this->tailUrl;

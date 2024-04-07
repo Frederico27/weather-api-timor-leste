@@ -41,9 +41,16 @@ class HourlyWeatherController extends Controller
         //Parsing city data from database
         $city = City::where('name', $city_name)->first();
         //create array of promise
-        $promises = [];
-        //initialize http client
-        $client = new Client();
+        if ($city) {
+            //create array of promise
+            $promises = [];
+            //initialize http client
+            $client = new Client();
+        } else {
+            return throw new HttpResponseException(response()
+                ->json(['errors' => 'Dadus la existe'])
+                ->setStatusCode(400));
+        }
 
         //url concatenation
         $url = $this->baseUrl . "latitude=" . $city->lat . "&longitude=" . $city->lng . $this->tailUrl;

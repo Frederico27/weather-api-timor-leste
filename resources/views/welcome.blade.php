@@ -25,13 +25,13 @@
           </div>
 
           <h2>About this API:</h2>
-          <p class="text-justify">This API is provided to collect all the real-time weather data of all municipalities across Timor-Leste. All the resource data is collected from Himawari Satelitte with the help by Open Source Weather Data Website: <a href="https://open-meteo.com/">Open Meteo</a>. This API is created in objective to provided easy access of real-time weather data of Timor-Leste with easy access and free for purpose of development an app, website, ChatBot and many more related with weather in Timor-Leste.
+          <p class="text-justify">This API is provided to collect all the real-time weather data of all municipalities across Timor-Leste. All the resource data is collected from Himawari Satelitte with the help by Open Source Weather Data: <a href="https://github.com/open-meteo/open-meteo">Open Meteo</a>. This API is created in objective to provided easy access and free of real-time weather data for purpose of development an app, website, ChatBot and many more related with weather in Timor-Leste.
             This API data is not 100% accurate because there is only one type of source that retrieve from satellite, so all the weather data only based by the image of the clouds cover the island, because there is still lack of Weather Monitoring System that established in Timor-Leste land across all municipalities.
         </p>
          
        
-        <h2>The documentation of API <img src="{{ asset("image/timor-leste.png") }}" style="width: 40px" alt="tls"></h2>
-        <p>You can visit this <a class='bx bxs-right-arrow-square' href="https://weather-api-timor-leste-production.up.railway.app/api/documentation">Link</a></p>
+        <h2>The Swagger documentation of API <img src="{{ asset("image/timor-leste.png") }}" style="width: 40px" alt="tls"></h2>
+        <p>For Docs and Testing the endpoints You can visit this <a class='bx bxs-right-arrow-square' href="https://weather-api-timor-leste-production.up.railway.app/api/documentation">Link</a></p>
        
 
         <h2>Weather Parameter Descriptions in Tetun</h2>
