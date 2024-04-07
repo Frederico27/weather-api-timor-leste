@@ -9,7 +9,7 @@
     },
     "servers": [
         {
-            "url": "http://127.0.0.1:8000",
+            "url": "https://weather-api-timor-leste-production.up.railway.app",
             "description": "Weather API"
         }
     ],
