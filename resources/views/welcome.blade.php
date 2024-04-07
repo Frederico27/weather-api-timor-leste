@@ -25,7 +25,7 @@
           </div>
 
           <h2>About this API:</h2>
-          <p>This API is provided to collect all the real-time weather data of all municipalities across Timor-Leste. All the resource data is collected from Himawari Satelitte with the help by Open Source Weather Data Website: <a href="https://open-meteo.com/">Open Meteo</a>. This API is created in objective to provided easy access of real-time weather data of Timor-Leste with easy access and free for purpose of development an app, website, ChatBot and many more related with weather in Timor-Leste.
+          <p class="text-justify">This API is provided to collect all the real-time weather data of all municipalities across Timor-Leste. All the resource data is collected from Himawari Satelitte with the help by Open Source Weather Data Website: <a href="https://open-meteo.com/">Open Meteo</a>. This API is created in objective to provided easy access of real-time weather data of Timor-Leste with easy access and free for purpose of development an app, website, ChatBot and many more related with weather in Timor-Leste.
             This API data is not 100% accurate because there is only one type of source that retrieve from satellite, so all the weather data only based by the image of the clouds cover the island, because there is still lack of Weather Monitoring System that established in Timor-Leste land across all municipalities.
         </p>
          
@@ -249,17 +249,17 @@
         <h6 style="color: rgb(247, 0, 144)">GET: api/klima/oras/{municipality}</h6>
         <p>This endpoint retrieves hourly weather of next 10 hours from specific municipality. Examples we specify on Ermera data like this <b><i>api/klima/oras/ermera</i></b>. <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima/oras/ermera">Result Link</a></p>
 
-              <h5>Find this Repo:</h5>
+              <h4>Find this Repo:</h4>
               <p>If you have a critics or an issue about this project please tell me by issued on this repository  <a class="bx bxl-github" href="https://github.com/Frederico27/weather-api-timor-leste" target="_blank">GitHub</a>
               </p>
               <br>      
-              <h5>Find me on:</h5>
+              <h4>Find me on:</h4>
                 <a class="bx bxl-github" href="https://github.com/frederico27" target="_blank">GitHub</a> | 
                 <a class="bx bxl-linkedin-square" href="https://www.linkedin.com/in/frederico-marcal-917377190/" target="_blank">LinkedIn</a>
              
     </div>
 
-    <footer class="footer mb-3 mt-3" style="background-color: rgb(237, 237, 237)">
+    <footer class="footer mt-3" style="background-color: rgb(237, 237, 237)">
        <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2024 Copyright:
