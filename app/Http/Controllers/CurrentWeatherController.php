@@ -22,7 +22,7 @@ use Illuminate\Http\Request;
  * ),
  *  @OA\Server(
  *      description="Weather API",
- *      url="http://127.0.0.1:8000"
+ *      url="https://weather-api-timor-leste-production.up.railway.app"
  *  ),
  */
 class CurrentWeatherController extends Controller
