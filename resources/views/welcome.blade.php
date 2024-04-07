@@ -25,7 +25,7 @@
           </div>
 
           <h2>About this API:</h2>
-          <p class="text-justify">This API is provided to collect all the real-time weather data of all municipalities across Timor-Leste. All the resource data is collected from Himawari Satelitte with the help by Open Source Weather Data: <a href="https://github.com/open-meteo/open-meteo">Open Meteo</a>. This API is created in objective to provided easy access and free of real-time weather data for purpose of development an app, website, ChatBot and many more related with weather in Timor-Leste.
+          <p class="text-justify">This API is provided to collect all the real-time weather data of all municipalities across Timor-Leste. All the resource data is wrapped together and collected from Himawari Satelitte with the help by Open Source Weather Data: <a href="https://github.com/open-meteo/open-meteo">Open Meteo</a>. This API is created in objective to provided easy access and free of real-time weather data for purpose of development an app, website, ChatBot and many more related with weather in Timor-Leste.
             This API data is not 100% accurate because there is only one type of source that retrieve from satellite, so all the weather data only based by the image of the clouds cover the island, because there is still lack of Weather Monitoring System that established in Timor-Leste land across all municipalities.
         </p>
          
