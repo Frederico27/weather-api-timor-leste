@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API Documentation</title>
+    <title>API Documentation Weather Timor-Leste</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Flag_of_East_Timor.svg/1280px-Flag_of_East_Timor.svg.png" sizes="32x32"/>
     <link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Flag_of_East_Timor.svg/1280px-Flag_of_East_Timor.svg.png" sizes="16x16"/>
 </head>
@@ -23,27 +24,9 @@
             </div>
           </div>
 
-       <u><h2>Current Data</h2></u> 
-        <h3 style="color: rgb(52, 52, 255)">GET: api/klima</h3>
-        <p>This endpoint retrieves all current weather data information from all municipalities.   <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima">Result Link</a></p>
        
-
-        <h3 style="color: rgb(43, 166, 34)">GET: api/klima/{municipality}</h3>
-        <p>This endpoint retrieves current weather information for a specific municipality. Examples we specify on Dili data  like this <b><i>api/klima/dili</i></b>. <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima/dili">Result Link</a> </p>
-
-
-        <u><h2>Daily Data</h2></u>
-        <h3 style="color: rgb(236, 0, 0)">GET: api/klima/diariu/{municipality}</h3>
-        <p>This endpoint retrieves daily weather of next 7 days from specific municipality. Examples we specify on Baucau data  like this <b><i>api/klima/diariu/baucau</i></b>.  <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima/diariu/baucau">Result Link</a></p>
-
-
-        <u><h2>Hourly Data</h2></u>
-        <h3 style="color: rgb(247, 0, 144)">GET: api/klima/oras/{municipality}</h3>
-        <p>This endpoint retrieves hourly weather of next 10 hours from specific municipality. Examples we specify on Ermera data like this <b><i>api/klima/oras/ermera</i></b>. <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima/oras/ermera">Result Link</a></p>
-
-
-        <h3>For More Information about this Swagger API Docs </h3>
-        <p>You can visit this <a href="https://weather-api-timor-leste-production.up.railway.app/api/documentation">link</a></p>
+        <h2>The documentation of API <img src="{{ asset("image/timor-leste.png") }}" style="width: 40px" alt="tls"></h2>
+        <p>You can visit this <a class='bx bxs-right-arrow-square' href="https://weather-api-timor-leste-production.up.railway.app/api/documentation">Link</a></p>
        
 
         <h2>Weather Parameter Descriptions</h2>
@@ -87,12 +70,12 @@
 
                 <tr>
                     <td>presipitasaun</td>
-                    <td>Sasukat posibilidade udan tun</td>
+                    <td>Sasukat ba materia kondensaun ne'ebe produz no monu husi atmosfera</td>
                 </tr>
 
                 <tr>
                     <td>presipitasaun_sum</td>
-                    <td>Sasukat somatoriu kada loron/oras ba posibilidade udan tun</td>
+                    <td>Sasukat somatoriu kada loron/oras ba materia kondensaun ne'ebe produz no monu husi atmosfera</td>
                 </tr>
 
                 <tr>
@@ -108,7 +91,7 @@
 
                 <tr>
                     <td>kodigu_klima</td>
-                    <td>numeru identifika ba kondisaun klima. Informasaun klaru liu iha <a href="#weather">iha okos</a></td>
+                    <td>numeru identifika ba kondisaun klima. Informasaun klaru liu <a href="#weather">iha okos</a></td>
                 </tr>
 
                 <tr>
@@ -229,22 +212,42 @@
             </table>
         </section>
 
-        <footer class="footer mb-3">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                <h5>Find this Repo:</h5>
-                <p>If you have a critics or an issue about this project please tell me by issued on this repository  <a href="https://github.com/Frederico27/weather-api-timor-leste" target="_blank">GitHub</a>
-                </p>
-                <br>      
-                <h5>Find me on:</h5>
-                  <a href="https://github.com/frederico27" target="_blank">GitHub</a> | 
-                  <a href="https://www.linkedin.com/in/frederico-marcal-917377190/" target="_blank">LinkedIn</a>
-                </div>
-              </div>
-            </div>
-          </footer>
+        <h2>How to Use:</h2>
+        <u><h5>Current Data</h5></u> 
+        <h6 style="color: rgb(52, 52, 255)">GET: api/klima</h6>
+        <p>This endpoint retrieves all current weather data information from all municipalities.   <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima">Result Link</a></p>
+       
+
+        <h6 style="color: rgb(43, 166, 34)">GET: api/klima/{municipality}</h6>
+        <p>This endpoint retrieves current weather information for a specific municipality. Examples we specify on Dili data  like this <b><i>api/klima/dili</i></b>. <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima/dili">Result Link</a> </p>
+
+
+        <u><h5>Daily Data</h5></u>
+        <h6 style="color: rgb(236, 0, 0)">GET: api/klima/diariu/{municipality}</h6>
+        <p>This endpoint retrieves daily weather of next 7 days from specific municipality. Examples we specify on Baucau data  like this <b><i>api/klima/diariu/baucau</i></b>.  <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima/diariu/baucau">Result Link</a></p>
+
+
+        <u><h5>Hourly Data</h5></u>
+        <h6 style="color: rgb(247, 0, 144)">GET: api/klima/oras/{municipality}</h6>
+        <p>This endpoint retrieves hourly weather of next 10 hours from specific municipality. Examples we specify on Ermera data like this <b><i>api/klima/oras/ermera</i></b>. <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima/oras/ermera">Result Link</a></p>
+
+              <h5>Find this Repo:</h5>
+              <p>If you have a critics or an issue about this project please tell me by issued on this repository  <a class="bx bxl-github" href="https://github.com/Frederico27/weather-api-timor-leste" target="_blank">GitHub</a>
+              </p>
+              <br>      
+              <h5>Find me on:</h5>
+                <a class="bx bxl-github" href="https://github.com/frederico27" target="_blank">GitHub</a> | 
+                <a class="bx bxl-linkedin-square" href="https://www.linkedin.com/in/frederico-marcal-917377190/" target="_blank">LinkedIn</a>
+             
     </div>
+
+    <footer class="footer mb-3 mt-3" style="background-color: rgb(237, 237, 237)">
+       <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2024 Copyright:
+    <a class="text-body" href="https://weather-api-timor-leste-production.up.railway.app">Weather API</a>
+  </div>
+      </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
