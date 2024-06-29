@@ -1,7 +1,7 @@
 {
     "version": 2,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.7.0" }
+        "api/index.php": { "runtime": "vercel-php@0.5.4" }
     },
     "routes": [
         {
@@ -18,7 +18,7 @@
         }
     ],
     "env": {
-        "APP_NAME": "Laravel Vercel",
+        "APP_NAME": "Weather-API-Timor-Leste",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
         "APP_URL": "https://laravel-vercel.vercel.app",
