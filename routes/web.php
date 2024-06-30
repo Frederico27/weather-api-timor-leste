@@ -20,7 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('api/klima', [CurrentWeatherController::class, 'getAllCurrentWeather']);
-Route::get('api/klima/{name}', [CurrentWeatherController::class, 'getEachCurrentWeather']);
-Route::get('api/klima/diariu/{name}', [DailyWeatherController::class, 'getDailyWeather']);
-Route::get('api/klima/oras/{name}', [HourlyWeatherController::class, 'getHourlyWeather']);
+Route::get('/klima', [CurrentWeatherController::class, 'getAllCurrentWeather']);
+Route::get('/klima/{name}', [CurrentWeatherController::class, 'getEachCurrentWeather']);
+Route::get('/klima/diariu/{name}', [DailyWeatherController::class, 'getDailyWeather']);
+Route::get('dadus/klima/oras/{name}', [HourlyWeatherController::class, 'getHourlyWeather']);
