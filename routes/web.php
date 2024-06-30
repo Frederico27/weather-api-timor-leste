@@ -23,4 +23,5 @@ Route::get('/', function () {
 Route::get('/klima', [CurrentWeatherController::class, 'getAllCurrentWeather']);
 Route::get('/klima/{name}', [CurrentWeatherController::class, 'getEachCurrentWeather']);
 Route::get('/klima/diariu/{name}', [DailyWeatherController::class, 'getDailyWeather']);
-Route::get('dadus/klima/oras/{name}', [HourlyWeatherController::class, 'getHourlyWeather']);
+Route::get('/klima/oras/{name}', [HourlyWeatherController::class, 'getHourlyWeather']);
+Route::get('/documentation');
