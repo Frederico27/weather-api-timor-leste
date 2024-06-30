@@ -30,8 +30,8 @@
         </p>
          
        
-        <h2>The Swagger documentation of API <img src="{{ asset("image/timor-leste.png") }}" style="width: 40px" alt="tls"></h2>
-        <p>For Docs and Testing the endpoints You can visit this <a class='bx bxs-right-arrow-square' href="https://weather-api-timor-leste-production.up.railway.app/api/documentation">Link</a></p>
+        <h2>The Swagger documentation of API <img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/timor-leste.png" style="width: 40px" alt="tls"></h2>
+        <p>For Docs and Testing the endpoints You can visit this <a class='bx bxs-right-arrow-square' href="https://weather-api-timor-leste.vercel.app/">Link</a></p>
        
 
         <h2>Weather Parameter Descriptions in Tetun</h2>
@@ -149,78 +149,79 @@
                     <tr>
                         <td>0</td>
                         <td>Lalehan Naroman</td>
-                        <td><img src="{{ asset('image/weathercode/clearsky.png') }}" style="width: 60px; height: 60px" alt="clearsky"></td>
+                        <td><img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/clearsky.png" style="width: 60px; height: 60px" alt="clearsky"></td>
                     </tr>
                     <tr>
                         <td>1, 2, 3</td>
                         <td>Naroman Naton, Kalohan, Kalohan nakukun uitoan</td>
-                        <td><img src="{{ asset('image/weathercode/fewclouds.png') }}" style="width: 60px; height: 60px" alt="fewclouds"></td>
+                        <td><img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/fewclouds.png" style="width: 60px; height: 60px" alt="fewclouds"></td>
                     </tr>
                     <tr>
                         <td>45, 48</td>
                         <td>Abu-Abu taka</td>
-                        <td><img src="{{ asset('image/weathercode/scatteredclouds.png') }}" style="width: 60px; height: 60px;" alt="scatteredclouds"></td>
+                        <td><img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/scatteredclouds.png" style="width: 60px; height: 60px;" alt="scatteredclouds"></td>
                     </tr>
     
                     <tr>
                         <td>51, 53, 55</td>
                         <td>Udan Piska: Kamaan, Moderada, Intensidade aas</td>
-                        <td><img src="{{ asset('image/weathercode/rain.png') }}" style="width: 60px; height: 60px" alt="rain"></td>
+                        <td><img src=" https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/rain.png" style="width: 60px; height: 60px" alt="rain"></td>
                     </tr>
     
                     <tr>
                         <td>56, 57</td>
                         <td>Udan Piska Malirin: Kamaan, Moderada, Intensidade aas</td>
-                        <td><img src="{{ asset('image/weathercode/rain.png') }}" style="width: 60px; height: 60px" alt="rain"></td>
+                        <td><img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/rain.png" style="width: 60px; height: 60px" alt="rain"></td>
                     </tr>
     
                     <tr>
                         <td>61, 63, 65</td>
                         <td>Udan: Kamaan, Moderada, Intensidade aas</td>
-                        <td><img src="{{ asset('image/weathercode/showerrain.png') }}" style="width: 60px; height: 60px" alt="showerrain"></td>
+                        <td><img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/showerrain.png" style="width: 60px; height: 60px" alt="showerrain"></td>
                     </tr>
     
                     <tr>
                         <td>66, 67</td>
                         <td>Udan Malirin: Kamaan, Moderada, Intensidade aas</td>
-                        <td><img src="{{ asset('image/weathercode/showerrain.png') }}" style="width: 60px; height: 60px" alt="showerrain"></td>
+                        <td><img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/showerrain.png" style="width: 60px; height: 60px" alt="showerrain"></td>
                     </tr>
     
                     <tr>
                         <td>71, 73, 75</td>
                         <td>Neve: Kamaan, Moderada, Intensidade aas</td>
-                        <td><img src="{{ asset('image/weathercode/snow.png') }}" style="width: 60px; height: 60px" alt="snow"></td>
+                        <td><img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/snow.png" style="width: 60px; height: 60px" alt="snow"></td>
                     </tr>
     
     
                     <tr>
                         <td>77</td>
                         <td>Neve: Piska</td>
-                        <td><img src="{{ asset('image/weathercode/snow.png') }}" style="width: 60px; height: 60px" alt="snow"></td>
+                        <td><img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/snow.png" style="width: 60px; height: 60px" alt="snow"></td>
                     </tr>
     
                     <tr>
                         <td>80, 81, 82</td>
                         <td>Udan maka'as: Kamaan, Moderada, Maka'as</td>
-                        <td><img src="{{ asset('image/weathercode/showerrain.png') }}" style="width: 60px; height: 60px" alt="showerrain"></td>
+                        <td><img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/showerrain.png" style="width: 60px; height: 60px" alt="showerrain"></td>
                     </tr>
     
+                   
                     <tr>
                         <td>85, 86</td>
                         <td>Udan Neve: Kamaan, Maka'as</td>
-                        <td><img src="{{ asset('image/weathercode/snow.png') }}" style="width: 60px; height: 60px" alt="snow"></td>
+                        <td><img src=" https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/snow.png" style="width: 60px; height: 60px" alt="snow"></td>
                     </tr>
     
                     <tr>
                         <td>95</td>
                         <td>Railakan: kamaan, maka'as</td>
-                        <td><img src="{{ asset('image/weathercode/thunderstorm.png') }}" style="width: 60px; height: 60px" alt="thunderstorm"></td>
+                        <td><img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/thunderstorm.png" style="width: 60px; height: 60px" alt="thunderstorm"></td>
                     </tr>
     
                     <tr>
                         <td>96, 99</td>
                         <td>Railakan ho Udan, ka Udan Es: Kama'an no Maka'as</td>
-                        <td><img src="{{ asset('image/weathercode/thunderstorm.png') }}" style="width: 60px; height: 60px" alt="thunderstorm"></td>
+                        <td><img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/weathercode/thunderstorm.png" style="width: 60px; height: 60px" alt="thunderstorm"></td>
                     </tr>
     
     
@@ -233,21 +234,21 @@
         <h2>How to Use:</h2>
         <u><h5>Current Data</h5></u> 
         <h6 style="color: rgb(52, 52, 255)">GET: api/klima</h6>
-        <p>This endpoint retrieves all current weather data information from all municipalities.   <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima">Result Link</a></p>
+        <p>This endpoint retrieves all current weather data information from all municipalities.   <a href="https://weather-api-timor-leste.vercel.app/api/klima">Result Link</a></p>
        
 
         <h6 style="color: rgb(43, 166, 34)">GET: api/klima/{municipality}</h6>
-        <p>This endpoint retrieves current weather information for a specific municipality. Examples we specify on Dili data  like this <b><i>api/klima/dili</i></b>. <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima/dili">Result Link</a> </p>
+        <p>This endpoint retrieves current weather information for a specific municipality. Examples we specify on Dili data  like this <b><i>api/klima/dili</i></b>. <a href="https://weather-api-timor-leste.vercel.app/api/klima/dili">Result Link</a> </p>
 
 
         <u><h5>Daily Data</h5></u>
         <h6 style="color: rgb(236, 0, 0)">GET: api/klima/diariu/{municipality}</h6>
-        <p>This endpoint retrieves daily weather of next 7 days from specific municipality. Examples we specify on Baucau data  like this <b><i>api/klima/diariu/baucau</i></b>.  <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima/diariu/baucau">Result Link</a></p>
+        <p>This endpoint retrieves daily weather of next 7 days from specific municipality. Examples we specify on Baucau data  like this <b><i>api/klima/diariu/baucau</i></b>.  <a href="https://weather-api-timor-leste.vercel.app/api/klima/diariu/baucau">Result Link</a></p>
 
 
         <u><h5>Hourly Data</h5></u>
         <h6 style="color: rgb(247, 0, 144)">GET: api/klima/oras/{municipality}</h6>
-        <p>This endpoint retrieves hourly weather of next 10 hours from specific municipality. Examples we specify on Ermera data like this <b><i>api/klima/oras/ermera</i></b>. <a href="https://weather-api-timor-leste-production.up.railway.app/api/klima/oras/ermera">Result Link</a></p>
+        <p>This endpoint retrieves hourly weather of next 10 hours from specific municipality. Examples we specify on Ermera data like this <b><i>api/klima/oras/ermera</i></b>. <a href="https://weather-api-timor-leste.vercel.app/api/klima/oras/ermera">Result Link</a></p>
 
               <h4>Find this Repo:</h4>
               <p>If you have a critics or an issue about this project please tell me by issued on this repository  <a class="bx bxl-github" href="https://github.com/Frederico27/weather-api-timor-leste" target="_blank">GitHub</a>
@@ -263,7 +264,7 @@
        <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
     © 2024 Copyright:
-    <a class="text-body" href="https://weather-api-timor-leste-production.up.railway.app">Weather API</a>
+    <a class="text-body" href="https://weather-api-timor-leste.vercel.app/">Weather API</a>
   </div>
       </footer>
 
