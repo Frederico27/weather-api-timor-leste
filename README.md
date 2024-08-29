@@ -31,10 +31,19 @@
    ```bash
    cp .env.example .env
 
-4. **Run the Database Migration**
+4. **Configure Database**
+   ```bash
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=your_database_name
+    DB_USERNAME=your_database_username
+    DB_PASSWORD=your_database_password
+
+5. **Run the Database Migration**
    ```bash
    php artisan migrate
 
-5. **Start Application**
+6. **Start Application**
    ```bash
    php artisan serve
