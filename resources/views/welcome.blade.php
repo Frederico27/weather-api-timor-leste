@@ -31,7 +31,6 @@
          
        
         <h2>The Swagger documentation of API <img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/timor-leste.png" style="width: 40px" alt="tls"></h2>
-        <p>For Docs and Testing the endpoints You can visit this <a class='bx bxs-right-arrow-square' href="https://weather-api-timor-leste.vercel.app/api/documentaion">Link</a></p>
        
 
         <h2>Weather Parameter Descriptions in Tetun</h2>
