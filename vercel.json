@@ -13,7 +13,7 @@
     "env": {
       "APP_NAME": "Weather-API-Timor-Leste",
       "APP_ENV": "production",
-      "APP_DEBUG": "true",
+      "APP_DEBUG": "false",
       "APP_URL": "https://weather-api-timor-leste.vercel.app/",
   
       "DB_CONNECTION":"pgsql",
