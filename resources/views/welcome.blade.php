@@ -29,7 +29,7 @@
             This API data is not 100% accurate because there is only one type of source that retrieve from satellite, so all the weather data only based by the image of the clouds cover the island, because there is still lack of Weather Monitoring System that established in Timor-Leste land across all municipalities.
         </p>
          
-       
+       {{-- Swagger --}}
         <h2>The Swagger documentation of API <img src="https://cdn.jsdelivr.net/gh/Frederico27/weather-api-timor-leste/public/image/timor-leste.png" style="width: 40px" alt="tls"></h2>
        
 
