@@ -262,7 +262,7 @@
     <footer class="footer mt-3" style="background-color: rgb(237, 237, 237)">
        <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2024 Copyright:
+    © 2025 Copyright:
     <a class="text-body" href="https://weather-api-timor-leste.vercel.app/">Weather API</a>
   </div>
       </footer>
