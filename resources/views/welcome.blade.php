@@ -192,7 +192,7 @@
                 <li><strong class="text-primary">GET</strong> <code>/api/klima</code> – Get current weather for all
                     municipalities [<a href="https://weather-api-timor-leste.vercel.app/api/klima">Try</a>]</li>
                 <li><strong class="text-success">GET</strong> <code>/api/klima/{municipality}</code> – Get current
-                    weather by municipality. Example: Ermera [<a
+                    weather by municipality. Example: Dili [<a
                         href="https://weather-api-timor-leste.vercel.app/api/klima/dili">Try</a>]</li>
                 <li><strong class="text-danger">GET</strong> <code>/api/klima/diariu/{municipality}</code> – Get daily
                     forecast. Example: Baucau [<a href="https://weather-api-timor-leste.vercel.app/api/klima/diariu/baucau">Try</a>]
